@@ -8,9 +8,11 @@ function Stopwatch({ color }) {
 
   useEffect(() => {
     console.log('efek dijalankan');
-    setInterval(() => {
+    const intervalId = setInterval(() => {
       setTimeInMillis((prevValue) => prevValue + 100);
     }, 100);
+
+    return () => clearInterval(intervalId)
   }, []);
 
   const onReset = () => { setTimeInMillis(0); };
