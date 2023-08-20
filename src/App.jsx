@@ -5,7 +5,9 @@ import './styles/style.css';
 
 function App() {
   return (
-    <Stopwatch />
+    <React.StrictMode>
+      <Stopwatch />
+    </React.StrictMode>
   );
 }
 
