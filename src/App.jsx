@@ -5,9 +5,12 @@ import './styles/style.css';
 
 function App() {
   return (
-    <React.StrictMode>
-      <Stopwatch />
-    </React.StrictMode>
+    <>
+      <React.StrictMode>
+        <Stopwatch />
+      </React.StrictMode>
+      <Stopwatch color='yellow' />
+    </>
   );
 }
 
